@@ -1,0 +1,15 @@
+C:\Users\tamma\source\repos\interviewHW\Twitter\Twitter\bin\Debug\net6.0\Twitter.exe
+C:\Users\tamma\source\repos\interviewHW\Twitter\Twitter\bin\Debug\net6.0\Twitter.deps.json
+C:\Users\tamma\source\repos\interviewHW\Twitter\Twitter\bin\Debug\net6.0\Twitter.runtimeconfig.json
+C:\Users\tamma\source\repos\interviewHW\Twitter\Twitter\bin\Debug\net6.0\Twitter.dll
+C:\Users\tamma\source\repos\interviewHW\Twitter\Twitter\bin\Debug\net6.0\Twitter.pdb
+C:\Users\tamma\source\repos\interviewHW\Twitter\Twitter\obj\Debug\net6.0\Twitter.csproj.AssemblyReference.cache
+C:\Users\tamma\source\repos\interviewHW\Twitter\Twitter\obj\Debug\net6.0\Twitter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tamma\source\repos\interviewHW\Twitter\Twitter\obj\Debug\net6.0\Twitter.AssemblyInfoInputs.cache
+C:\Users\tamma\source\repos\interviewHW\Twitter\Twitter\obj\Debug\net6.0\Twitter.AssemblyInfo.cs
+C:\Users\tamma\source\repos\interviewHW\Twitter\Twitter\obj\Debug\net6.0\Twitter.csproj.CoreCompileInputs.cache
+C:\Users\tamma\source\repos\interviewHW\Twitter\Twitter\obj\Debug\net6.0\Twitter.dll
+C:\Users\tamma\source\repos\interviewHW\Twitter\Twitter\obj\Debug\net6.0\refint\Twitter.dll
+C:\Users\tamma\source\repos\interviewHW\Twitter\Twitter\obj\Debug\net6.0\Twitter.pdb
+C:\Users\tamma\source\repos\interviewHW\Twitter\Twitter\obj\Debug\net6.0\Twitter.genruntimeconfig.cache
+C:\Users\tamma\source\repos\interviewHW\Twitter\Twitter\obj\Debug\net6.0\ref\Twitter.dll
