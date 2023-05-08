@@ -1,4 +1,7 @@
-﻿namespace Twitter
+﻿
+
+
+namespace Twitter
 {
     class Program
     {
@@ -13,11 +16,11 @@
         }
         static void Main()
         {
-            int choice, width, height, trangleChoice;
+            int choice, width, height, triangleChoice, hasMod = 0;
             string str = "*";
-            Console.WriteLine("enter 1 to rectengle 2 to trangle or 3 to exit:");
+            Console.WriteLine("enter 1 to rectangle 2 to triangle or 3 to exit:");
             bool res = int.TryParse(Console.ReadLine(), out choice);
-            while (choice != 3)
+            while (choice == 1 || choice == 2)
             {
                 Console.WriteLine("enter width of tower:");
                 res = int.TryParse(Console.ReadLine(), out width);
@@ -38,34 +41,34 @@
                 }
                 else if (choice == 2)
                 {
-                    Console.WriteLine("enter 1 to calculate the heikef or 2 to print the trangle:");
-                    res = int.TryParse(Console.ReadLine(), out trangleChoice);
-                    while (trangleChoice != 1 && trangleChoice != 2)
+                    Console.WriteLine("enter 1 to calculate the heikef or 2 to print the triangle:");
+                    res = int.TryParse(Console.ReadLine(), out triangleChoice);
+                    while (triangleChoice != 1 && triangleChoice != 2)
                     {
-                        Console.WriteLine("enter 1 to calculate the heikef or 2 to print the trangle:");
-                        res = int.TryParse(Console.ReadLine(), out trangleChoice);
+                        Console.WriteLine("enter 1 to calculate the heikef or 2 to print the triangle:");
+                        res = int.TryParse(Console.ReadLine(), out triangleChoice);
                     }
-                    if (trangleChoice == 1)//calculate
+                    if (triangleChoice == 1)//calculate
                     {
-                        Console.WriteLine("the heikef is:{0}", width * height);
+                        Console.WriteLine("the heikef is:{0}", width + 2* height);
                     }
-                    else//print
+                    else//print 
                     {
                         if (width % 2 == 0 || width > 2 * height)
                             Console.WriteLine("The triangle cannot be printed");
 
                         else
                         {
-                            int numOfLines = height - 2, numOfGroups = NumOfOdds(width) - 2;
+                            int numOfLines = height - 2, numOfGroups = NumOfOdds(width) - 2, newLinesNum = 0;
                             string space = "";
                             for (int i = 0; i < (width - 1) / 2; i++)
                                 space += " ";
                             Console.WriteLine(space + "*");//first line
                                                            //middle lines
-
+                            hasMod = 0;
                             if (numOfLines % numOfGroups != 0)
                             {
-
+                                hasMod = 1;
                                 for (int k = 0; k < numOfLines / numOfGroups + numOfLines % numOfGroups; k++)
                                 {
                                     if (k == 0)
@@ -77,11 +80,13 @@
                                 }
                                 numOfGroups -= 1;
                             }
-
+                            if (hasMod == 1)
+                                newLinesNum = (numOfLines - ((numOfLines / numOfGroups) + (numOfLines % numOfGroups) - 1)) / numOfGroups;
+                            else
+                                newLinesNum = numOfLines / numOfGroups;
                             for (int l = 0; l < numOfGroups; l++)
-                                for (int j = 0; j < numOfLines / numOfGroups; j++)
+                                for (int j = 0; j < newLinesNum; j++)
                                 {
-
                                     if (j == 0)
                                     {
                                         space = space.Substring(1);
@@ -100,7 +105,7 @@
                 }
                 else
                     throw new Exception("not legal choice");
-                Console.WriteLine("enter 1 to rectengle 2 to trangle or 3 to exit:");
+                Console.WriteLine("enter 1 to rectangle 2 to triangle or 3 to exit:");
                 res = int.TryParse(Console.ReadLine(), out choice);
             }
         }
